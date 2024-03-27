@@ -366,6 +366,8 @@ fn give_name(ale_tree: &[FlatNode], original_tree: &[FlatNode], node_index: usiz
             return original_name.clone();
         }
         else {
+            // Show the node index and name
+            println!("Node index: {}, Node name: {}", node_index, node.name);
             panic!();
         }
     }
